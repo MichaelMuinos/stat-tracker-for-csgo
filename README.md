@@ -2,8 +2,6 @@
 Track you and your friends stats in the game Counter Strike: Global Offensive.
 https://play.google.com/store/apps/details?id=com.justplaingoatappsgmail.stattrackerforcsgo&hl=en
 
-![](/releasepictures/Screenshot_2017-01-26-23-17-00.png?raw=true =100x100)
-
 ## How it works
 Using the Steam API and simple conversion formulas, you can enter your name, 64 digit steam ID, 32 digit steam ID, or the new steam ID3 and it will track your stats and maintain a history of all searches that have been made.
 
