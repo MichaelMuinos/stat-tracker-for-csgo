@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="layerColor">#626562</color>
+    <color name="labelColor">#8c1e1e</color>
+    <color name="ratioTint">#470f0f</color>
+    <color name="outlineColor">#b1bcbe</color>
+    <color name="parentColor">#3f3f3e</color>
+    <color name="alphaColor">#f1fd01</color>
+    <color name="achievedColor">#20681c</color>
+    <color name="notAchievedColor">#c1211c</color>
+    <color name="cardBackFillColor">#528faf</color>
+    <color name="cardBackFillLayoutColor">#144661</color>
+    <color name="whiteColor">#FFFFFFFF</color>
+    <color name="limeColor">#0bf536</color>
+</resources>

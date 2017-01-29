@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/achievement_layout_bg"
+    android:id="@+id/cardBackLinearLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:textSize="@dimen/medium_text_size"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:padding="7dp"
+        android:background="@drawable/achievement_label_name_layout"
+        android:textColor="#FFF"
+        android:id="@+id/cardBackAchName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:id="@+id/cardBackTopPartLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_weight="0.5"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/cardBackPicture" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Description"
+            android:maxLines="10"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_below="@+id/achievementName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textColor="@color/alphaColor"
+            android:id="@+id/cardBackDescription"
+            android:textSize="@dimen/small_text_size" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Global Percentage Achieved"
+        android:padding="3dp"
+        android:gravity="center"
+        android:background="@color/achievedColor"
+        android:textColor="#FFF"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textSize="@dimen/small_text_size" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardBackPercentageLayout"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:id="@+id/cardBackFillLayout"
+            android:background="@color/cardBackFillLayoutColor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="#FFF"
+                android:id="@+id/cardBackPercentFillTextView"
+                android:background="@color/cardBackFillColor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Percentage"
+            android:gravity="center|right"
+            android:paddingRight="20dp"
+            android:id="@+id/cardBackPercentage"
+            android:textSize="@dimen/small_text_size_three"
+            android:textColor="@color/alphaColor" />
+
+    </FrameLayout>
+
+</LinearLayout>

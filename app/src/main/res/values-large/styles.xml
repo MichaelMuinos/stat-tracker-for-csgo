@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/parentColor</item>
+        <item name="colorPrimaryDark">@color/parentColor</item>
+        <item name="colorAccent">@color/alphaColor</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/parentColor</item>
+    </style>
+
+    <style name="AppTheme.PopupTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/ratioTint</item>
+        <item name="colorControlActivated">@color/ratioTint</item>
+    </style>
+
+</resources>

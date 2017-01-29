@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_length">600</integer>
+    <integer name="anim_length_half">300</integer>
+    <integer name="profile_pic">412</integer>
+    <integer name="past_search_pic">128</integer>
+</resources>

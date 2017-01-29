@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pastSearchCoordinatorLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pastSearchParentLayout"
+        android:orientation="vertical"
+        android:background="@color/parentColor"
+        android:animateLayoutChanges="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/searchicon"
+            android:drawablePadding="5dp"
+            android:textColor="@color/whiteColor"
+            android:textColorHint="@color/outlineColor"
+            android:hint="Search player name..."
+            android:id="@+id/playerEditText"
+            android:maxLines="1"
+            style="@style/EditText"
+            android:theme="@style/EditText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="12dp"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/medium_text_size" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pastSearchListView"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

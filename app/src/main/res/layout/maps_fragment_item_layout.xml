@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:id="@+id/mapsParentLinearLayout"
+    android:padding="20dp"
+    android:background="@color/parentColor">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapsMainContentLayout"
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textColor="@color/whiteColor"
+            android:id="@+id/mapName"
+            android:textSize="@dimen/large_text_size"
+            android:background="@drawable/label_layout_bg"
+            android:padding="7dp"
+            android:gravity="center_horizontal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="323dp"
+            android:id="@+id/mapsFrameLayout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mapPicture"
+                android:scaleType="matrix"
+                android:paddingBottom="3dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="60dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/mapsLinearLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mapsWinsLayout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/winicon"
+                        android:alpha=".70"
+                        android:background="@color/alphaColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Wins"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/limeColor"
+                        android:background="@color/labelColor"
+                        android:alpha=".65"
+                        android:textSize="@dimen/medium_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:gravity="center|right"
+                        android:textColor="@color/alphaColor"
+                        android:paddingRight="15dp"
+                        android:background="@color/labelColor"
+                        android:alpha=".65"
+                        android:id="@+id/mapWins"
+                        android:textSize="@dimen/medium_text_size_three" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mapsLossesLayout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/loseicon"
+                        android:alpha=".70"
+                        android:background="@color/alphaColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Losses"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/limeColor"
+                        android:background="@color/labelColor"
+                        android:alpha=".65"
+                        android:textSize="@dimen/medium_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0"
+                        android:gravity="center|right"
+                        android:textColor="@color/alphaColor"
+                        android:paddingRight="15dp"
+                        android:background="@color/labelColor"
+                        android:alpha=".65"
+                        android:id="@+id/mapLosses"
+                        android:textSize="@dimen/medium_text_size_three" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mapsWinPercentageLayout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/percentageicon"
+                        android:alpha=".70"
+                        android:background="@color/alphaColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Win %"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/limeColor"
+                        android:alpha=".65"
+                        android:background="@color/labelColor"
+                        android:textSize="@dimen/medium_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0%"
+                        android:gravity="center|right"
+                        android:textColor="@color/alphaColor"
+                        android:paddingRight="15dp"
+                        android:alpha=".65"
+                        android:background="@color/labelColor"
+                        android:id="@+id/mapWinPercentage"
+                        android:textSize="@dimen/medium_text_size_three" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/mapsIconLayout"
+                android:paddingTop="60dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/winicon"
+                        android:background="@color/alphaColor" />
+
+
+                    <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/loseicon"
+                        android:alpha=".70"
+                        android:background="@color/alphaColor" />
+
+                    <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/percentageicon"
+                        android:alpha=".70"
+                        android:background="@color/alphaColor" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

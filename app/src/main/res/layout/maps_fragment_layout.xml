@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mapsParentLayout"
+    android:orientation="vertical"
+    android:background="@color/parentColor"
+    android:animateLayoutChanges="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/searchicon"
+        android:drawablePadding="5dp"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="@color/outlineColor"
+        android:hint="Search map name..."
+        android:id="@+id/mapEditText"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="12dp"
+        style="@style/EditText"
+        android:theme="@style/EditText"
+        android:textSize="@dimen/medium_text_size" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapsListView"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

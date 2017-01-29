@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:id="@+id/weaponsParentLinearLayout"
+    android:padding="20dp"
+    android:background="@color/parentColor">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        android:id="@+id/weaponsMainContentLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weapon"
+            android:textColor="@color/whiteColor"
+            android:id="@+id/weaponName"
+            android:textSize="@dimen/large_text_size"
+            android:background="@drawable/label_layout_bg"
+            android:padding="7dp"
+            android:gravity="center_horizontal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="323dp"
+            android:id="@+id/weaponsFrameLayout">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/weaponPicture"
+                    android:scaleType="matrix"
+                    android:layout_margin="3dp" />
+
+                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                    android:padding="35dp"
+                    android:id="@+id/weaponsLinearLayout">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weaponsKillsLayout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/weaponkillicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/kills"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/limeColor"
+                            android:textSize="@dimen/medium_text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0"
+                            android:id="@+id/weaponKills"
+                            android:gravity="center|right"
+                            android:textColor="@color/alphaColor"
+                            android:textSize="@dimen/medium_text_size_three" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weaponsShotsLayout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/weaponshotsicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Shots"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/limeColor"
+                            android:textSize="@dimen/medium_text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0"
+                            android:gravity="center|right"
+                            android:id="@+id/weaponShots"
+                            android:textColor="@color/alphaColor"
+                            android:textSize="@dimen/medium_text_size_three" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weaponsHitsLayout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hiticon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Hits"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/limeColor"
+                            android:textSize="@dimen/medium_text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0"
+                            android:gravity="center|right"
+                            android:id="@+id/weaponHits"
+                            android:textColor="@color/alphaColor"
+                            android:textSize="@dimen/medium_text_size_three" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weaponsAccuracyLayout">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/targeticon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Accuracy"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/limeColor"
+                            android:textSize="@dimen/medium_text_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="0%"
+                            android:gravity="center|right"
+                            android:id="@+id/weaponAccuracy"
+                            android:textColor="@color/alphaColor"
+                            android:textSize="@dimen/medium_text_size_three" />
+                    </LinearLayout>
+                </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

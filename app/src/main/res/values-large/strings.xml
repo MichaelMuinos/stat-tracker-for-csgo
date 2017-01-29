@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CS:GO Stat Tracker</string>
+    <string name="kdr">K/D Ratio</string>
+    <string name="wlr">W/L %</string>
+    <string name="accuracy_ratio">Accuracy %</string>
+    <string name="kills">Kills</string>
+    <string name="deaths">Deaths</string>
+    <string name="wins">Wins</string>
+    <string name="losses">Losses</string>
+    <string name="shots_fired">Shots Fired</string>
+    <string name="shots_hit">Shots Hit</string>
+    <string name="headshots">Headshot %</string>
+    <string name="kills_head">Headshots</string>
+    <string name="action_bar_title">CS:GO Stat Tracker</string>
+</resources>
