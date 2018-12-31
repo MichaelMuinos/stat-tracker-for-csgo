@@ -1,6 +1,6 @@
-# Stat Tracker for CS:GO
-Track you and your friends stats in the game Counter Strike: Global Offensive.
-https://play.google.com/store/apps/details?id=com.justplaingoatappsgmail.stattrackerforcsgo&hl=en
+# Stat Tracker for CS:GO (Deprecated, the API used is no longer recent)
+Track you and your friends stats in the game Counter Strike: Global Offensive. I am no longer keeping up with
+this project, thus it was removed from the Google Play Store.
 
 ## How it works
 Using the Steam API and simple conversion formulas, you can enter your name, 64 digit steam ID, 32 digit steam ID, or the new steam ID3 and it will track your stats and maintain a history of all searches that have been made.
